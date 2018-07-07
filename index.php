@@ -27,6 +27,7 @@ if (!empty($_POST)) {
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 	<link rel="icon" type="text/css" href="images/ubicacion.png">
 	<link rel="stylesheet" type="text/css" href="css/fontello.css">
@@ -38,7 +39,7 @@ if (!empty($_POST)) {
 
 	<link rel="stylesheet" type="text/css" href="css/burger.css">
 	<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-	<title>Proyectos</title>
+	<title>Proyectos alexander</title>
 
 </head>
 <body>
