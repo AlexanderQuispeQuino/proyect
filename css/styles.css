@@ -2,9 +2,10 @@ body{
 	margin: 0px;
 }
 
-.p{
-	color: white;
-    font-size: 40px;
+.p {
+    color: white;
+    font-size: 45px;
+    font-weight: 500;
 }
 
 .body{ 
@@ -227,5 +228,6 @@ body{
 
     .p {
     font-size: 30px;
-  }
+    font-weight: 400;
+}
 }
