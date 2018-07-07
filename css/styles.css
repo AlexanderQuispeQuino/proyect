@@ -205,4 +205,14 @@ body{
          margin-left: 0px;
          margin-top: 0px;"
       }
+
+
+
+    .itemscentro{
+      display: flex; 
+    width: 80%;
+   
+    padding-top: 20px;
+    flex-direction: column;
+    }
 }
