@@ -93,24 +93,28 @@ body{
     }
 
     .button-conoce {
-      width: 140px;
-      height: 30px;
-      background-color: rgba(0,0,0,0.2);
-      border-radius: 12px;
-      border-color: cyan;
-      /* text-decoration-color: white; */
-      color: white;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      text-decoration: none;
+   width: 140px;
+    height: 40px;
+    /* background-color: rgba(0,0,0,0.2); */
+    border-radius: 5px;
+    /* border-color: cyan; */
+    /* text-decoration-color: white; */
+    color: white;
+    background-color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-decoration: dashed;
+    border: none;
+    /* border: 1px solid cyan; */
       }
  
 
       .button-conoce:hover{
-        transform: scale(1.1); 
+        /* transform: scale(1.1);  */
          box-shadow: 3px 4px 30px #000;
         text-decoration: none;
+        background: linear-gradient(to left, #05453f, #12bfde);
       }
 
       .button-conoce:active{
@@ -215,7 +219,8 @@ body{
     padding-top: 20px;
     flex-direction: column;
     }
+
     .p {
-       font-size: 30px;
+    font-size: 30px;
   }
 }
