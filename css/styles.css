@@ -230,4 +230,16 @@ body{
     font-size: 25px;
     font-weight: 400;
 }
+	
+	.botones{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column-reverse;
+    align-items: center;
+    }
+
+    .button-conoce {
+
+      margin-bottom: 20px;
+    }
 }
