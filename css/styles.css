@@ -1,0 +1,208 @@
+body{
+	margin: 0px;
+}
+
+.p{
+	color: white;
+    font-size: 40px;
+}
+
+.body{ 
+    font-family: 'Rajdhani', sans-serif;
+    background-image:url("../images/portadagrises2.jpg") ;
+    margin: 0;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+     /*  header */ 
+    .barra-header {
+      /* background: rgba(14, 14, 0, 0.9); */
+      background: black;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .barra-items ul{
+      display: flex;
+      
+      /* justify-content: space-around; */
+      margin: 0;
+      padding: 0;
+    }
+
+     .barra-items li , a{
+      display: inline-block;
+      color: white;
+     /*  text-decoration-line: line-through; */
+      /* font-size: larger; */
+      cursor: pointer;
+      text-decoration: none;
+      
+      
+
+    }
+
+    .barra-items li {
+     padding: 20px;
+      
+      
+
+    }
+
+
+     .barra-items li a:hover{
+      color: #29CCEF;
+      
+
+    }
+
+     .barra-items li:hover{
+      background:rgba(20,56,34,.8)
+      
+
+    }
+
+    .barra-items {
+      /* display: flex ;
+      justify-content: space-between; */
+      width: 30%;
+    }
+
+    .escribir{
+    	height: 60px ;
+    }
+
+
+
+------------------------------------
+
+   .botones{
+     /*  display: flex;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 12px;
+ */
+ 	  display: flex;
+    justify-content: space-around;
+
+    }
+
+    .button-conoce {
+      width: 140px;
+      height: 30px;
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 12px;
+      border-color: cyan;
+      /* text-decoration-color: white; */
+      color: white;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      text-decoration: none;
+      }
+ 
+
+      .button-conoce:hover{
+        transform: scale(1.1); 
+         box-shadow: 3px 4px 30px #000;
+        text-decoration: none;
+      }
+
+      .button-conoce:active{
+        background-color: deepskyblue; 
+        border: none;
+        text-decoration: none;
+      }
+      .contenedor-centro{
+        justify-content: center;
+		    height: 100vh;
+		    align-content: center;
+		    /* align-items: center; */
+		    display: grid;
+      }
+
+
+
+      /* ITEMS */
+
+
+      .imgitems{
+      	border-radius: 50%;
+      	width: 120px;
+      	height: 120px;
+      }
+
+      .items{
+      	display: flex;
+      }
+
+      .itemscentro{
+      display: flex;
+	    width: 100%;
+	    justify-content: space-evenly;
+	    padding-top: 20px;
+      }
+
+      .descripcionparrafo{
+      	font-size: 20px;
+
+      }
+
+      .tiempo{
+      	width: 300px;
+      }
+
+      .figuraitems{
+      	display: flex;
+      	justify-content: center;
+      }
+
+      .logo{
+         width: 45px; 
+         margin-left: 10px;
+         margin-top: 7px;"
+      }
+
+
+
+/* moviles */
+
+@media screen and (max-width: 700px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    /*  header */ 
+    .barra-header {
+      /* background: rgba(14, 14, 0, 0.9); */
+      background: black;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .barra-items {
+      display: none;
+    }
+
+    .escribir{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    }
+
+    .logo{
+         width: 45px; 
+         margin-left: 0px;
+         margin-top: 0px;"
+      }
+}
