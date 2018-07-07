@@ -8,11 +8,16 @@ body{
 }
 
 .body{ 
-    font-family: 'Rajdhani', sans-serif;
-    background-image:url("../images/portadagrises2.jpg") ;
+    font-family: 'Rajdhani', sans-serif;/* 
+    background-image:url("../images/portadagrises2.jpg") ; */
+
+    background-image:url("../images/portada2.jpg") ;
     margin: 0;
     background-size: cover;
     height: 100vh;
+    background-position: center center;
+    /* darle como un efecto parallax: ; */
+    /* background-attachment: fixed; */
 }
 
 
