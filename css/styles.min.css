@@ -1,2 +1,39 @@
-body{margin:0}.p{color:#fff;font-size:45px;font-weight:500}.body{font-family:'Rajdhani',sans-serif;background-image:url(../images/portada2.jpg);margin:0;background-size:cover;height:100vh;background-position:center center}.barra-header{background:#000;position:fixed;width:100%;display:flex;justify-content:space-between;box-shadow:0 3px 11px 0 rgba(0,0,0,0.15)}.barra-items ul{display:flex;margin:0;padding:0}.barra-items li,a{display:inline-block;color:#fff;cursor:pointer;text-decoration:none}.barra-items li{padding:20px}.barra-items li a:hover{color:#29CCEF}.barra-items li:hover{background:rgba(20,56,34,.8)}.barra-items{width:30%}.escribir{height:60px}------------------------------------
-.botones{display:flex;justify-content:space-around}.button-conoce{width:140px;height:40px;border-radius:5px;color:#fff;background-color:rgba(255,255,255,0.5);cursor:pointer;display:flex;justify-content:center;text-decoration:dashed;border:none}.button-conoce:hover{box-shadow:3px 4px 30px #000;text-decoration:none;background:linear-gradient(to left,#05453f,#12bfde)}.button-conoce:active{background-color:#00bfff;border:none;text-decoration:none}.contenedor-centro{justify-content:center;height:100vh;align-content:center;display:grid}.imgitems{border-radius:50%;width:120px;height:120px}.items{display:flex}.itemscentro{display:flex;width:100%;justify-content:space-evenly;padding-top:20px}.descripcionparrafo{font-size:20px}.tiempo{width:300px}.figuraitems{display:flex;justify-content:center}.logo{width:45px;margin-left:10px;margin-top:7px}@media screen and (max-width: 700px){body{overflow-x:hidden}.barra-header{background:#000;position:fixed;width:100%;display:flex;justify-content:space-between;box-shadow:0 3px 11px 0 rgba(0,0,0,0.15)}.barra-items{display:none}.escribir{display:flex;justify-content:center;align-items:center;align-content:center;width:100%}.logo{width:45px;margin-left:0;margin-top:0}.itemscentro{display:flex;width:80%;padding-top:20px;flex-direction:column}.p{font-size:25px;font-weight:400}.botones{display:flex;flex-direction:column-reverse;align-items:center}.button-conoce{margin-bottom:20px}}
+body{margin:0px}.p{color:white;font-size:45px;font-weight:500}.body{font-family:'Rajdhani',sans-serif;background-image:url("../images/portada2.jpg");margin:0;background-size:cover;height:100vh;background-position:center center}.barra-header{background:black;position:fixed;width:100%;display:flex;justify-content:space-between;box-shadow:0 3px 11px 0 rgba(0,0,0,0.15)}.barra-items ul{display:flex;margin:0;padding:0}.barra-items li,a{display:inline-block;color:white;text-decoration:none}.barra-items li{padding:20px}.barra-items{width:30%}.escribir{height:60px}.button-conoce{width:140px;height:40px;border-radius:5px;color:white;background-color:rgba(255,255,255,0.5);display:flex;justify-content:center;text-decoration:dashed;border:none}.contenedor-centro{justify-content:center;height:100vh;align-content:center;display:grid}.logo{width:45px;margin-left:10px;margin-top:7px;"
+      }
+
+
+
+/* moviles */
+
+@media screen and (max-width: 700px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    /*  header */ 
+    .barra-header {
+      /* background: rgba(14, 14, 0, 0.9); */
+      background: black;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .barra-items {
+      display: none;
+    }
+
+    .escribir{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    }
+
+    .logo{
+         width: 45px; 
+         margin-left: 0px;
+         margin-top: 0px;"}.p{font-size:25px;font-weight:400}.botones{display:flex;flex-direction:column-reverse;align-items:center}.button-conoce{margin-bottom:20px}}
