@@ -5,7 +5,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 input[type=text], input[type=password], input[type=date], input[type=email] {
     width: 100%;
     padding: 15px;
-    margin: 5px 0 15px 0;
+    margin: 5px 0 0 0;
     display: inline-block;
     border: 1px #cbc6c6 solid;
     /* border-color: rgb(118, 118, 118); */
@@ -51,7 +51,7 @@ button:hover {
 /* Add padding to container elements */
 .container-registro {
     padding: 15px;
-    height: 624px;
+    /* height: 624px; */
 }
 
 /* The Modal (background) */
@@ -63,6 +63,7 @@ button:hover {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
+    background: rgba(0,0,0,0.8);
    /*  overflow: auto; */ /* Enable scroll if needed */
     /* background-color: #474e5d; */
    
@@ -71,11 +72,8 @@ button:hover {
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-   /*  margin: 5% auto 15% auto;  *//* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    /* width: 40%; */ /* Could be more or less, depending on screen size */
-    width: 500px;
-    height: 624px;
+    width: 465px;
+    border-radius: 10px;
 }
 
 /* Style the horizontal ruler */
@@ -86,7 +84,7 @@ hr {
  
 /* The Close Button (x) */
 .close {
-  /*  position: absolute;  */
+   position: absolute; 
     /* right: 35px; */
     /* top: 15px; */
     /* width: 16px;
@@ -108,11 +106,21 @@ hr {
     clear: both;
     display: table;
 }
+
 .modalcentro{
     display: flex;
-    justify-content:center;
-    padding-top: 70px;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% + 60px);
 }
+
+.contenedorlogo{
+
+   text-align: center;
+    margin: 15px 0;
+
+}
+
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 550px) {
@@ -128,22 +136,49 @@ hr {
     /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-   /*  margin: 5% auto 15% auto;  *//* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 100%; /* Could be more or less, depending on screen size */
+    width: 100%; 
+    margin: 20px;
 }
-    
-    .modalcentro{
+
+.container-registro {
+   padding: 15px;
+   height: 550px;
+}
+
+ .modalcentro{
     display: flex;
     justify-content:center;
     padding-top: 0px;
+    height: 100%;
+    
 }
-    
-    
+
+.close{
+    position: absolute;
+}
+
+.contenedorlogo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin: 15px 0;
+
+}
+
+
 input[type=text], input[type=password], input[type=date], input[type=email] {
-    
+    width: 100%;
+    padding: 15px;
     margin: 5px 0px 0px 0px;
-    
- }
+    display: inline-block;
+    border: 1px #cbc6c6 solid;
+    /* border-color: rgb(118, 118, 118); */
+    /* background: #f1f1f1; */
+
+}
 
 }

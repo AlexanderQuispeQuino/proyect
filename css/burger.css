@@ -1,6 +1,6 @@
 /* Icon 1 */
 
- .burger {
+ .burguer-button {
    display: none;
 }
 
@@ -21,7 +21,7 @@
   cursor: pointer;
 }
 
-.nav-icon1 .span-burger {
+.nav-icon1 .span-burguer-button {
   display: block;
   position: absolute;
   height: 2px;
@@ -40,19 +40,19 @@
   transition: .5s ease-out;
 }
 
-.nav-icon1 .span-burger:nth-child(1) {
+.nav-icon1 .span-burguer-button:nth-child(1) {
   top: 0px;
 }
 
-.nav-icon1 .span-burger:nth-child(2) {
+.nav-icon1 .span-burguer-button:nth-child(2) {
   top: 9px;
 }
 
-.nav-icon1 .span-burger:nth-child(3) {
+.nav-icon1 .span-burguer-button:nth-child(3) {
   top: 18px;
 }
 
-.nav-icon1.open .span-burger:nth-child(1) {
+.nav-icon1.active .span-burguer-button:nth-child(1) {
   top: 9px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -60,13 +60,13 @@
   transform: rotate(315deg);
 }
 
-.nav-icon1.open .span-burger:nth-child(2) {
+.nav-icon1.active .span-burguer-button:nth-child(2) {
   opacity: 0;
   /* left: -60px; */
   transform: rotate(225deg);
 }
 
-.nav-icon1.open .span-burger:nth-child(3) {
+.nav-icon1.active .span-burguer-button:nth-child(3) {
   top: 9px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
@@ -75,12 +75,34 @@
 }
 
 
+
+.abrir{
+ 
+     animation-name: abrirModal; 
+    
+  }
+
+  @keyframes abrirModal {
+    to {
+      opacity: 0;
+      transform: scaleZ(0);
+    }
+
+    from {
+      opacity: 1;
+     
+      transform: scaleZ(1); 
+    }
+    
+  }
+
+
 /* mobiles */
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 550px) {
 
-  .burger {
+  .burguer-button {
     display: block;
     width: 60px;
     height: 60px;
@@ -99,11 +121,11 @@
     bottom: 0;
     right: 0;
     display: flex;
-    width: 45%;
+    width: 40%;
     align-items: center;
     transition: .3s;
   }
-  .barra-items.open {
+  .barra-items.active {
     left: 0;
   }
 
@@ -143,5 +165,8 @@
   transition: .5s ease-in-out;
   cursor: pointer;
 }
+
+
+
 
 }

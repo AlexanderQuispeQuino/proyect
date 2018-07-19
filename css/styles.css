@@ -2,11 +2,21 @@ body{
 	margin: 0px;
 }
 
-.p {
+
+	.p {
     color: white;
     font-size: 45px;
     font-weight: 500;
 }
+
+
+.descripcion{
+    padding: 10px;
+}
+
+
+
+
 
 .body{ 
     font-family: 'Rajdhani', sans-serif;/* 
@@ -31,6 +41,7 @@ body{
       display: flex;
       justify-content: space-between;
       box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.15);
+      z-index: 1;
     }
 
     .barra-items ul{
@@ -74,13 +85,15 @@ body{
     }
 
     .barra-items {
-      /* display: flex ;
-      justify-content: space-between; */
-      width: 30%;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
     }
 
     .escribir{
     	height: 60px ;
+      display: flex;
+      align-items: center;
     }
 
 
@@ -132,10 +145,17 @@ body{
         justify-content: center;
 		    height: 100vh;
 		    align-content: center;
-		    /* align-items: center; */
+		    
 		    display: grid;
       }
-
+      
+      .itemscentro{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        grid-gap: 20px;
+        justify-content: center;
+        padding: 40px;
+      }
 
 
       /* ITEMS */
@@ -147,25 +167,51 @@ body{
       	height: 120px;
       }
 
-      .items{
+      /* .items{
       	display: flex;
-      }
+        justify-content: center;
+      } */
 
-      .itemscentro{
+      /* .itemscentro{
       display: flex;
 	    width: 100%;
 	    justify-content: space-evenly;
 	    padding-top: 20px;
+      } */
+
+      .tiempo {
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.3);
+    }
+
+      .level-1 {
+      grid-row-end: span 4;
+      }
+      .level-2 {
+        grid-row-end: span 4;
+      }
+      .level-3 {
+        grid-row-end: span 4;
+      }
+
+      .level-4 {
+        grid-row-end: span 4;
       }
 
       .descripcionparrafo{
-      	font-size: 20px;
+      	  margin: 0;
+          color: gray;
+          font-size: 15px;
+          line-height: 170%;
+          text-align: center;
 
       }
 
-      .tiempo{
+      /* .tiempo{
       	width: 300px;
-      }
+        box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.3);
+      } */
 
       .figuraitems{
       	display: flex;
@@ -173,9 +219,13 @@ body{
       }
 
       .logo{
-         width: 45px; 
-         margin-left: 10px;
-         margin-top: 7px;"
+        width: 90px;
+        margin-left: 10px;
+      }
+
+      .logoRegistro{
+        margin-left: 0px;
+        width: 90px;
       }
 
 
@@ -187,9 +237,8 @@ body{
     body{
         overflow-x: hidden;
     }
-    /*  header */ 
+   
     .barra-header {
-      /* background: rgba(14, 14, 0, 0.9); */
       background: black;
       position: fixed;
       width: 100%;
@@ -211,29 +260,23 @@ body{
     }
 
     .logo{
-         width: 45px; 
+         width: 90px; 
          margin-left: 0px;
-         margin-top: 0px;"
       }
 
 
 
     .itemscentro{
-      display: flex; 
-    width: 80%;
-   
-    padding-top: 20px;
-    flex-direction: column;
+      width: 80%;
     }
 
     .p {
     font-size: 25px;
     font-weight: 400;
-}
-	
-	.botones{
+    }
+
+    .botones{
     display: flex;
-    /* justify-content: center; */
     flex-direction: column-reverse;
     align-items: center;
     }
@@ -242,4 +285,20 @@ body{
 
       margin-bottom: 20px;
     }
+
+    .menu-items{
+      width: 100%;
+    }
+
+    .items{
+        display: flex;
+        justify-content: center;
+      }
+
+    .logoRegistro{
+      margin-left: 0px;
+      width: 90px;
+
+    }
+
 }
