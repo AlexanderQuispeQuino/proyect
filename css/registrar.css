@@ -121,6 +121,13 @@ hr {
 
 }
 
+.pTerminos, .pRegistrar{
+    margin: 8px 0 0;
+    text-align: center;
+    color: #5b5555;
+    font-size: 15px;
+}
+
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 550px) {
@@ -138,12 +145,12 @@ hr {
     background-color: #fefefe;
     border: 1px solid #888;
     width: 100%; 
-    margin: 40px 20px;
+    margin: 20px;
 }
 
 .container-registro {
    padding: 15px;
-   height: 550px;
+   height: 500px;
 }
 
  .modalcentro{
@@ -165,20 +172,34 @@ hr {
     align-items: center;
     align-content: center;
     width: 100%;
-    margin: 15px 0;
+    margin: 15px 0 8px;
 
 }
 
 
 input[type=text], input[type=password], input[type=date], input[type=email] {
     width: 100%;
-    padding: 15px;
+    padding: 13px;
     margin: 5px 0px 0px 0px;
     display: inline-block;
     border: 1px #cbc6c6 solid;
     /* border-color: rgb(118, 118, 118); */
     /* background: #f1f1f1; */
 
+}
+
+.pRegistrar{
+    margin: 10px 0 0; 
+    text-align: center;
+    color: #5b5555;
+    font-size: 15px;"
+}
+
+.pTerminos{
+    margin: 8px 0 0;
+    text-align: center;
+    color: #5b5555;
+    font-size: 15px;
 }
 
 }
