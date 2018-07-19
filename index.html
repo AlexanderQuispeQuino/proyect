@@ -1,26 +1,4 @@
 
-<?php
-
-include_once 'config.php';
-
-
-$result = false;
-if (!empty($_POST)) {
-    $sql    = 'INSERT INTO aliado (nombre,apellidos,password,email,celular,fec_nacimiento) VALUES(:nombre,:apellidos,:password,:email,:celular,:fec_nacimiento)';
-    $query  = $pdo->prepare($sql);
-    $result = $query->execute([
-        'nombre'   => $_POST['nombre'],
-        'apellidos' => $_POST['apellidos'],
-        'password'   => $_POST['password'],
-        'email' => $_POST['email'],
-        'celular'   => $_POST['celular'],
-        'fec_nacimiento'   => $_POST['fec_nacimiento']
-
-    ]);
-
-}
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
